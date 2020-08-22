@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Home.css';
 
 import Spinner from '../components/Spinner';
+import Menu from '../components/Menu';
+import Header from '../components/Header';
 
 const Home = () => {
 	const [ courses, setCourses ] = useState([]);
@@ -18,22 +19,13 @@ const Home = () => {
 			});
 	}, []);
 
-	const renderButtons = (list) => {
-		return list.map((listItem) => (
-			<div className="course-list__button">
-				<p className="course-list__button__text">{listItem.taller}</p>
-			</div>
-		));
-	};
-
 	return (
 		<main>
-			<header className="header">
-				<h1 className="header__title">ACADEMIA REBELDE</h1>
-				<h2 className="header__subtitle">septiembre</h2>
-			</header>
-
-			<section className="course-list">{courses.length > 0 ? renderButtons(courses) : <Spinner />}</section>
+			<Header />
+			<section className="course-list">{courses.length > 0 ? <Menu items={courses} /> : <Spinner />}</section>
+			<footer className="footer">
+				<button className="button button--shape">Inscripciones</button>
+			</footer>
 		</main>
 	);
 };

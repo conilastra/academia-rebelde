@@ -26,8 +26,13 @@ main {
 	main {
 		margin: 0 auto;
 		max-width: 80%;
-		padding-top: 10%;
+		padding-top: 5%;
 	}
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
 }
 
 :root {
