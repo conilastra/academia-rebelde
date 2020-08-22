@@ -3,12 +3,47 @@
 }
 
 .header__title {
-	font-family: var(--arvo);
 	color: var(--yellow);
+	font-family: var(--arvo);
 	margin-bottom: 0;
 }
 
 .header__subtitle {
 	font-family: var(--homemade-apple);
 	margin-top: 0;
+}
+
+.course-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.course-list__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("./images/irregular-circle.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	height: 150px;
+	width: 150px;
+}
+
+.course-list__button:hover,
+.course-list__button:active,
+.course-list__button:focus {
+	background-image: url("./images/irregular-circle-reverse.png");
+}
+
+.course-list__button__text {
+	color: black;
+	font-family: var(--arvo);
+	font-size: 80%;
+	width: 60%;
 }
