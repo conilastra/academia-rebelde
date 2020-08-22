@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Home.css';
 
-import Spinner from '../components/Spinner';
-import Menu from '../components/Menu';
-import Header from '../components/Header';
+import Spinner from '../../components/Spinner';
+import Menu from '../../components/Menu';
+import Header from '../../components/Header';
 
 const Home = () => {
 	const [ courses, setCourses ] = useState([]);

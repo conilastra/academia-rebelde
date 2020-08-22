@@ -27,7 +27,7 @@
 .button--shape {
 	background-color: transparent;
 	padding: .5rem;
-	background-image: url("./images/irregular.png");
+	background-image: url("../images/irregular.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -62,7 +62,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("./images/irregular-circle.png");
+	background-image: url("../images/irregular-circle.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,7 +74,7 @@
 .course-list__button:hover,
 .course-list__button:active,
 .course-list__button:focus {
-	background-image: url("./images/irregular-circle-reverse.png");
+	background-image: url("../images/irregular-circle-reverse.png");
 }
 
 .course-list__button--small {
