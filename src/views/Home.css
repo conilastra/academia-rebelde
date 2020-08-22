@@ -1,0 +1,14 @@
+.header {
+	text-align: center;
+}
+
+.header__title {
+	font-family: var(--arvo);
+	color: var(--yellow);
+	margin-bottom: 0;
+}
+
+.header__subtitle {
+	font-family: var(--homemade-apple);
+	margin-top: 0;
+}
