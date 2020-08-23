@@ -27,12 +27,11 @@ const App = () => {
 				</Route>
 				{courses.map((course) => {
 					return (
-						<Route to={`/${course.name}`} key={course.link}>
+						<Route exact to={`/${course.name}`} key={course.link}>
 							<Course list={courses} />
 						</Route>
 					);
 				})}
-				<Redirect from="*" to="/" />
 			</Switch>
 		</Router>
 	);

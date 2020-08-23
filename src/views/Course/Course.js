@@ -1,5 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { useLocation, withRouter, Link } from 'react-router-dom';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useLocation, withRouter, Link, useHistory, Redirect } from 'react-router-dom';
+import { Calendar } from 'react-modern-calendar-datepicker';
+import { locale, customDaysClassName } from '../Calendar/models';
 
 import './Course.css';
 
@@ -9,13 +11,16 @@ import Spinner from '../../components/Spinner';
 const Course = ({ list, onClick }) => {
 	const [ currentCourse, setCurrentCourse ] = useState(null);
 	const [ imageStatus, setImageStatus ] = useState('idle');
+	const [ firstLoad, setFirstLoad ] = useState(false);
+	const [ match, setMatch ] = useState(false);
 	const location = useLocation();
+	const history = useHistory();
 
 	useMemo(
 		() => {
 			if (location) {
 				const currentCourse = list.filter((listItem) => `/${listItem.link}` === location.pathname);
-				setCurrentCourse(currentCourse);
+				setCurrentCourse(currentCourse[0]);
 			}
 		},
 		[ location, list ]
@@ -30,52 +35,99 @@ const Course = ({ list, onClick }) => {
 		[ location ]
 	);
 
+	useEffect(() => {
+		setFirstLoad(true);
+	}, []);
+
+	useEffect(
+		() => {
+			if (location && currentCourse) {
+				if ('/' + currentCourse.link === location.pathname) {
+					setMatch(true);
+				} else {
+					setMatch(false);
+				}
+			}
+		},
+		[ location, currentCourse ]
+	);
+
 	return (
 		<div className="wrapper">
-			<Navbar items={list} onClick={onClick} />
+			{!match && firstLoad && imageStatus === 'pending' ? <Redirect to="/" /> : null}
 			{currentCourse ? (
-				<div className="course__wrapper fade-in">
-					<main className="course__presentation">
-						<h1 className="course__title">{currentCourse[0].taller.toUpperCase()}</h1>
-						<p className="course__description">{currentCourse[0].objetivoTaller}</p>
-						<div className="course__date__background">
+				<React.Fragment>
+					<Navbar items={list} onClick={onClick} />
+					<div className="course__wrapper fade-in">
+						<main className="course__presentation">
+							<h1 className="course__title">{currentCourse.taller.toUpperCase()}</h1>
+							<p className="course__description">{currentCourse.objetivoTaller}</p>
 							<div className="course__date">
-								<p className="course__date__title">{currentCourse[0].fecha}</p>
-								<p className="course__date__subtitle">{currentCourse[0].horario}</p>
+								<span className="course__date__title">{currentCourse.fecha}</span>
+								<span> | </span>
+								<span className="course__date__subtitle">{currentCourse.horario}</span>
 							</div>
-						</div>
+							<div className="course__calendar">
+								<Calendar
+									customDaysClassName={customDaysClassName}
+									value={
+										currentCourse.sesion2 ? (
+											[
+												{
+													year: 2020,
+													month: 9,
+													day: currentCourse.sesion1
+												},
+												{
+													year: 2020,
+													month: 9,
+													day: currentCourse.sesion2
+												}
+											]
+										) : (
+											{
+												year: 2020,
+												month: 9,
+												day: currentCourse.sesion1
+											}
+										)
+									}
+									locale={locale}
+								/>
+							</div>
 
-						<section className="course__buttons">
-							<button className="button button--shape">
-								<span>Inscríbete</span>
-							</button>
-							<Link to="/calendario" className="link">
-								<p className="small">
-									<span className="material-icons">event</span>
-									<span>Ver calendario</span>
-								</p>
-							</Link>
-						</section>
-					</main>
+							<section className="course__buttons">
+								<button className="button button--shape">
+									<span>Inscríbete</span>
+								</button>
+								<Link to="/calendario" className="link">
+									<p className="small">
+										<span className="material-icons">event</span>
+										<span>Ver calendario</span>
+									</p>
+								</Link>
+							</section>
+						</main>
 
-					<aside className="course__instructor">
-						{imageStatus === 'pending' && <Spinner />}
+						<aside className="course__instructor">
+							{imageStatus === 'pending' && <Spinner />}
 
-						<img
-							onLoad={() => setImageStatus('done')}
-							className="course__instructor__thumbnail fade-in"
-							src={currentCourse[0].foto}
-							style={{ display: imageStatus === 'pending' ? 'none' : 'initial' }}
-							alt="Imagen de la encargada del taller"
-						/>
+							<img
+								onLoad={() => setImageStatus('done')}
+								className="course__instructor__thumbnail fade-in"
+								src={currentCourse.foto}
+								style={{ display: imageStatus === 'pending' ? 'none' : 'initial' }}
+								alt="Imagen de la encargada del taller"
+							/>
 
-						<div>
-							<p className="course__instructor__name">{currentCourse[0].encargada}</p>
-							<p className="course__instructor__team">{currentCourse[0].equipo}</p>
-							<p className="course__instructor__descripcion">{currentCourse[0].descripcionTallerista}</p>
-						</div>
-					</aside>
-				</div>
+							<div>
+								<p className="course__instructor__name">{currentCourse.encargada}</p>
+								<p className="course__instructor__team">{currentCourse.equipo}</p>
+								<p className="course__instructor__descripcion">{currentCourse.descripcionTallerista}</p>
+							</div>
+						</aside>
+					</div>
+				</React.Fragment>
 			) : (
 				<Spinner />
 			)}

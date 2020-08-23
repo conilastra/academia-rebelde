@@ -3,6 +3,11 @@
 	margin-bottom: 1rem;
 }
 
+.course__calendar {
+	position: relative;
+	right: 50px;
+}
+
 .course__description {
 	font-size: 90%;
 }
@@ -23,8 +28,10 @@
 }
 
 .course__date {
-	width: 140px;
 	text-align: center;
+	padding: 2rem;
+	font-size: 80%;
+	color: var(--yellow);
 }
 
 .course__date__title {
@@ -65,7 +72,12 @@
 
 .course__buttons {
 	text-align: center;
-	padding-bottom: 3rem;
+	position: relative;
+	bottom: 60px;
+}
+
+.course__presentation {
+	width: 80vw;
 }
 
 /* Desktop view */
