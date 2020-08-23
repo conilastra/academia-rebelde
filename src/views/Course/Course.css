@@ -30,6 +30,7 @@
 .course__date__title {
 	font-family: var(--arvo);
 	padding-bottom: .5rem;
+	font-weight: 700;
 }
 
 .course__instructor {

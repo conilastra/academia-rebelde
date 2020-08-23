@@ -15,7 +15,7 @@ const Home = ({ items }) => {
 			<section className="course-list">{items.length > 0 ? <Menu items={items} /> : <Spinner />}</section>
 			<footer className="footer">
 				<button className="button button--shape button--main">
-					<span>Inscríbete</span>
+					<span className="main-button__text">Inscríbete</span>
 				</button>
 				<Link to="/calendario" className="link">
 					<p className="small">
