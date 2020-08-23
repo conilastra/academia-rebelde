@@ -108,9 +108,11 @@
 		width: 60%;
 		margin: 0 auto;
 	}
-
+	.course__calendar {
+		right: auto;
+	}
 	.course__buttons {
-		padding-top: 4rem;
+		bottom: 100px;
 	}
 
 	.course-list__button--small {
