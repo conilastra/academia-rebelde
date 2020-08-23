@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91f9ef873b459ec5056ffa557c5551eb",
+    "revision": "45ed1478144156cd4c34d8f526066f5d",
     "url": "/academia-rebelde/index.html"
   },
   {
-    "revision": "4ecf0adcd503b0a08041",
+    "revision": "ffe2d3d71ee1b6669920",
     "url": "/academia-rebelde/static/css/main.874f3a5b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/academia-rebelde/static/js/2.1d762f10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4ecf0adcd503b0a08041",
-    "url": "/academia-rebelde/static/js/main.4a2275d9.chunk.js"
+    "revision": "ffe2d3d71ee1b6669920",
+    "url": "/academia-rebelde/static/js/main.9af319e8.chunk.js"
   },
   {
     "revision": "682366311148a639e63a",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/academia-rebelde/precache-manifest.12214a4227f6cae924fa0da4c87406ef.js"
+  "/academia-rebelde/precache-manifest.2a348f22028270e7cab8d29095939220.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/academia-rebelde/static/css/main.874f3a5b.chunk.css",
-    "main.js": "/academia-rebelde/static/js/main.4a2275d9.chunk.js",
-    "main.js.map": "/academia-rebelde/static/js/main.4a2275d9.chunk.js.map",
+    "main.js": "/academia-rebelde/static/js/main.9af319e8.chunk.js",
+    "main.js.map": "/academia-rebelde/static/js/main.9af319e8.chunk.js.map",
     "runtime-main.js": "/academia-rebelde/static/js/runtime-main.1b582c15.js",
     "runtime-main.js.map": "/academia-rebelde/static/js/runtime-main.1b582c15.js.map",
     "static/js/2.1d762f10.chunk.js": "/academia-rebelde/static/js/2.1d762f10.chunk.js",
     "static/js/2.1d762f10.chunk.js.map": "/academia-rebelde/static/js/2.1d762f10.chunk.js.map",
     "index.html": "/academia-rebelde/index.html",
-    "precache-manifest.12214a4227f6cae924fa0da4c87406ef.js": "/academia-rebelde/precache-manifest.12214a4227f6cae924fa0da4c87406ef.js",
+    "precache-manifest.2a348f22028270e7cab8d29095939220.js": "/academia-rebelde/precache-manifest.2a348f22028270e7cab8d29095939220.js",
     "service-worker.js": "/academia-rebelde/service-worker.js",
     "static/css/main.874f3a5b.chunk.css.map": "/academia-rebelde/static/css/main.874f3a5b.chunk.css.map",
     "static/js/2.1d762f10.chunk.js.LICENSE.txt": "/academia-rebelde/static/js/2.1d762f10.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.1b582c15.js",
     "static/js/2.1d762f10.chunk.js",
     "static/css/main.874f3a5b.chunk.css",
-    "static/js/main.4a2275d9.chunk.js"
+    "static/js/main.9af319e8.chunk.js"
   ]
 }
