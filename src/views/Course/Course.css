@@ -87,6 +87,10 @@
 	width: 80vw;
 }
 
+.course__date__subtitle {
+	color: white;
+}
+
 /* Desktop view */
 @media (min-width: 769px) {
 	.course__wrapper {
@@ -108,7 +112,9 @@
 		text-align: center;
 		padding-top: 4rem;
 	}
-
+	.course__instructor {
+		color: white;
+	}
 	.course__instructor__descripcion {
 		width: 60%;
 		margin: 0 auto;

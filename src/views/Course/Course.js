@@ -63,7 +63,7 @@ const Course = ({ list, onClick }) => {
 							<p className="course__description">{currentCourse.objetivoTaller}</p>
 							<div className="course__date">
 								<span className="course__date__title">{currentCourse.fecha}</span>
-								<span> | </span>
+								<span style={{ color: 'grey' }}> | </span>
 								<span className="course__date__subtitle">{currentCourse.horario}</span>
 							</div>
 							<div className="course__calendar">

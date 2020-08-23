@@ -13,6 +13,8 @@ body {
 	color: white;
 	font-family: var(--open-sans);
 	min-height: calc(100vh - 12px);
+	box-sizing: border-box;
+	max-width: 100vw;
 }
 
 main {
