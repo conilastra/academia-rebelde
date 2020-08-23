@@ -97,9 +97,9 @@ const Course = ({ list, onClick }) => {
 							</div>
 
 							<section className="course__buttons">
-								<button className="button button--shape">
+								<Link to="/formulario" className="button button--shape">
 									<span>Inscríbete</span>
-								</button>
+								</Link>
 								<Link to="/calendario" className="link">
 									<p className="small">
 										<span className="material-icons">event</span>

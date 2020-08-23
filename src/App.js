@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Home from './views/Home/Home';
 import Course from './views/Course/Course';
 import Calendar from './views/Calendar/Calendar';
+import Form from './views/Form/Form';
 
 const App = () => {
 	const [ courses, setCourses ] = useState([]);
@@ -21,6 +22,9 @@ const App = () => {
 			<Switch>
 				<Route exact path="/">
 					<Home items={courses} />
+				</Route>
+				<Route exact path="/formulario">
+					<Form />
 				</Route>
 				<Route exact path="/calendario">
 					<Calendar list={courses} />

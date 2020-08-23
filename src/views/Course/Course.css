@@ -71,9 +71,11 @@
 }
 
 .course__buttons {
-	text-align: center;
 	position: relative;
 	bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .course__presentation {
