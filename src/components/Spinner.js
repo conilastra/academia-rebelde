@@ -3,21 +3,21 @@ import './Spinner.css';
 
 const Spinner = () => {
 	return (
-		<div class="container">
-			<div class="dot-container">
-				<div class="dot" />
-				<div class="dot" />
-				<div class="dot" />
+		<div className="container">
+			<div className="dot-container">
+				<div className="dot" />
+				<div className="dot" />
+				<div className="dot" />
 			</div>
-			<div class="dot-container">
-				<div class="dot" />
-				<div class="dot" />
-				<div class="dot" />
+			<div className="dot-container">
+				<div className="dot" />
+				<div className="dot" />
+				<div className="dot" />
 			</div>
-			<div class="dot-container">
-				<div class="dot" />
-				<div class="dot" />
-				<div class="dot" />
+			<div className="dot-container">
+				<div className="dot" />
+				<div className="dot" />
+				<div className="dot" />
 			</div>
 		</div>
 	);

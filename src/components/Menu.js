@@ -1,14 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Menu = ({ items, navMode = false }) => {
+const Menu = ({ items, onClick, navMode = false }) => {
 	return items.map((item) => (
-		<Link
-			to={`/${item.taller}`}
-			className={navMode ? 'course-list__button course-list__button--small' : 'course-list__button'}
+		<NavLink
+			to={`/${item.link}`}
+			className={
+				navMode ? 'fade-in course-list__button course-list__button--small' : 'fade-in course-list__button'
+			}
+			key={item.link}
+			activeClassName="navlink--active"
+			onClick={onClick}
 		>
 			<p className="course-list__button__text">{item.taller}</p>
-		</Link>
+		</NavLink>
 	));
 };
 

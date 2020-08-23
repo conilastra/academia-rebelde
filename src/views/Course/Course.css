@@ -1,0 +1,83 @@
+/* Desktop view */
+/* .course__wrapper {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+.course__wrapper > main {
+	width: 70%;
+}
+
+.course__wrapper > aside {
+	width: 30%;
+	background-image: url("../../images/irregular-rotated.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+.course__title {
+	font-size: 140%;
+	margin-bottom: 1rem;
+}
+
+.course__description {
+	font-size: 90%;
+}
+
+.course__date {
+	align-content: center;
+	background-image: url("../../images/irregular-paint-composed.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200px;
+	margin-top: 2rem;
+	padding: 0 1rem;
+}
+
+.course__date > p {
+	text-align: center;
+	width: 80%;
+	font-weight: bold;
+}
+
+.course__date > p:first-child {
+	font-family: var(--arvo);
+	padding-bottom: .5rem;
+}
+
+.course__instructor {
+	background-image: url("../../images/irregular-line-dark.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 380px;
+	padding: 1rem;
+}
+
+.course__instructor__thumbnail {
+	border-radius: 100%;
+	height: 100px;
+	object-fit: cover;
+	width: 100px;
+}
+
+.course__instructor__name {
+	font-family: var(--homemade-apple);
+}
+
+.course__instructor__team {
+	font-size: 70%;
+	font-weight: bolder;
+	position: relative;
+	top: -10px;
+}
+
+.course__instructor__descripcion {
+	font-size: 90%;
+}
