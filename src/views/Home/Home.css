@@ -4,6 +4,11 @@
 	margin: 0 auto;
 }
 
+.header--small {
+	font-size: 70%;
+	padding: 1rem;
+}
+
 .header__title,
 .course__title,
 .title {
@@ -164,6 +169,9 @@
 .course-list__button--small:hover,
 .navlink--active.course-list__button {
 	background-image: url("../../images/irregular-line.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 	font-size: 90%;
 }
 
