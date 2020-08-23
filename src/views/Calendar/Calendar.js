@@ -10,7 +10,6 @@ import Header from '../../components/Header';
 import { Link } from 'react-router-dom';
 
 const Calendar = ({ list }) => {
-	console.log(list);
 	return (
 		<main className="view-wrapper">
 			<Header />

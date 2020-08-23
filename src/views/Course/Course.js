@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { useLocation, withRouter, Link, useHistory, Redirect } from 'react-router-dom';
+import { useLocation, withRouter, Link, Redirect } from 'react-router-dom';
 import { Calendar } from 'react-modern-calendar-datepicker';
 import { locale, customDaysClassName } from '../Calendar/models';
 
@@ -14,7 +14,6 @@ const Course = ({ list, onClick }) => {
 	const [ firstLoad, setFirstLoad ] = useState(false);
 	const [ match, setMatch ] = useState(false);
 	const location = useLocation();
-	const history = useHistory();
 
 	useMemo(
 		() => {
