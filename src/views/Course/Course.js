@@ -35,31 +35,31 @@ const Course = ({ list, onClick }) => {
 			<Navbar items={list} onClick={onClick} />
 			{currentCourse ? (
 				<div className="course__wrapper fade-in">
-					<main>
+					<main className="course__presentation">
 						<h1 className="course__title">{currentCourse[0].taller.toUpperCase()}</h1>
 						<p className="course__description">{currentCourse[0].objetivoTaller}</p>
 						<div className="course__date">
 							<p className="course__date__title">{currentCourse[0].fecha}</p>
 							<p className="course__date__subtitle">{currentCourse[0].horario}</p>
 						</div>
-					</main>
 
-					<section className="course__buttons">
-						<button className="button button--shape">
-							<span>Inscríbete</span>
-						</button>
-						<a
-							className="link"
-							href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEFpkeZ2yw&#x2F;view?utm_content=DAEFpkeZ2yw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<p className="small">
-								<span className="material-icons">event</span>
-								<span>Ver calendario</span>
-							</p>
-						</a>
-					</section>
+						<section className="course__buttons">
+							<button className="button button--shape">
+								<span>Inscríbete</span>
+							</button>
+							<a
+								className="link"
+								href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEFpkeZ2yw&#x2F;view?utm_content=DAEFpkeZ2yw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<p className="small">
+									<span className="material-icons">event</span>
+									<span>Ver calendario</span>
+								</p>
+							</a>
+						</section>
+					</main>
 
 					<aside className="course__instructor">
 						{imageStatus === 'pending' && <Spinner />}

@@ -91,10 +91,17 @@
 	top: -3px;
 }
 
+.button--main {
+	height: 120px;
+}
+
 .link {
 	font-family: var(--homemade-apple);
 	opacity: 90%;
 	transition: all 0.5s ease;
+	width: 100%;
+	text-align: center;
+	padding-top: 1rem;
 }
 
 .link > span {
@@ -138,7 +145,11 @@
 
 .course-list__button:hover,
 .course-list__button:active,
-.course-list__button:focus,
+.course-list__button:focus {
+	background-image: url("../../images/irregular-circle-reverse.png");
+}
+
+.course-list__button--small:hover,
 .navlink--active.course-list__button {
 	background-image: url("../../images/irregular-dark.png");
 }
