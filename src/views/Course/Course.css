@@ -8,7 +8,7 @@
 }
 
 .course__date__background {
-	align-content: center;
+	align-items: center;
 	background-image: url("../../images/irregular-paint-composed.png");
 	background-position: center;
 	background-repeat: no-repeat;
