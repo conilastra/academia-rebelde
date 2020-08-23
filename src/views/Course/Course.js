@@ -99,11 +99,8 @@ const Course = ({ list, onClick }) => {
 								<Link to="/formulario" className="button button--shape">
 									<span>Inscríbete</span>
 								</Link>
-								<Link to="/calendario" className="link">
-									<p className="small">
-										<span className="material-icons">event</span>
-										<span>Calendario completo</span>
-									</p>
+								<Link to="/calendario" className="button calendar__button--home calendar__button">
+									<span>Ver calendario</span>
 								</Link>
 							</section>
 						</main>

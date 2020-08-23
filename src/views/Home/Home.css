@@ -103,6 +103,10 @@
 	height: 120px;
 }
 
+.calendar__button--home {
+	position: initial;
+}
+
 .link {
 	font-family: var(--homemade-apple);
 	opacity: 90%;

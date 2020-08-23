@@ -14,11 +14,11 @@ const Calendar = ({ list }) => {
 		<main className="view-wrapper">
 			<Header />
 			<section className="calendar-wrapper">
-				<div>
+				<div className="calendar-wrapper__section">
 					<ModernCalendar customDaysClassName={customDaysClassName} value={preselectedDays} locale={locale} />
 					<p className="disclaimer">(11–20: receso programado por salud mental)</p>
 					<a
-						className="button calendar__button"
+						className="button calendar__button calendar__button--relative"
 						href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEFpkeZ2yw&#x2F;view?utm_content=DAEFpkeZ2yw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
 						target="_blank"
 						rel="noopener noreferrer"

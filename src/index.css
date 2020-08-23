@@ -35,6 +35,7 @@ button {
 a {
 	color: inherit;
 	text-decoration: inherit;
+	transition: all 0.5s ease;
 }
 
 :root {

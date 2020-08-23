@@ -10,20 +10,35 @@
 	padding: 2rem;
 }
 
+.calendar-wrapper__section {
+	height: 70vh;
+}
+
 .calendar__button {
 	color: white;
 	width: 100%;
 	display: block;
 	text-align: center;
-	position: relative;
-	bottom: 50px;
 	font-size: 90%;
-	font-family: var(--arvo);
-	text-decoration: underline wavy;
+	font-family: var(--homemade-apple);
+}
+
+.calendar__button--relative {
+	position: relative;
+	bottom: 100px;
+	height: 200px;
+	background-image: url(/static/media/irregular-line-yellow.7530c5cf.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
 }
 
 .calendar__button:hover {
-	font-size: 110%;
+	color: gray;
 }
 
 .calendar__list {
@@ -97,6 +112,7 @@
 @media (min-width: 798px) {
 	.calendar__list {
 		min-width: 500px;
+		padding-left: 3rem;
 	}
 
 	.calendar-wrapper {
