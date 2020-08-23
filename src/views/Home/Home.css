@@ -3,7 +3,8 @@
 }
 
 .header__title,
-.course__title {
+.course__title,
+.title {
 	color: var(--yellow);
 	font-family: var(--arvo);
 	margin-bottom: 0;
@@ -69,8 +70,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 150px;
-	width: 80%;
+	height: 100px;
+	width: 200px;
 	text-align: center;
 	transition: all 0.5s ease;
 }
@@ -101,7 +102,6 @@
 	transition: all 0.5s ease;
 	width: 100%;
 	text-align: center;
-	padding-top: 1rem;
 }
 
 .link > span {
@@ -176,6 +176,7 @@
 	color: black;
 	font-family: var(--arvo);
 	font-size: 80%;
+	font-weight: 700;
 	width: 60%;
 }
 
@@ -192,4 +193,12 @@
 
 .material-icons {
 	margin-right: .25rem;
+}
+
+.disclaimer {
+	font-size: 70%;
+	text-align: center;
+	opacity: 70%;
+	position: relative;
+	bottom: 100px;
 }

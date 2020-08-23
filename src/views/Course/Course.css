@@ -7,7 +7,7 @@
 	font-size: 90%;
 }
 
-.course__date {
+.course__date__background {
 	align-content: center;
 	background-image: url("../../images/irregular-paint-composed.png");
 	background-position: center;
@@ -22,13 +22,12 @@
 	padding: 0 1rem;
 }
 
-.course__date > p {
+.course__date {
+	width: 140px;
 	text-align: center;
-	font-weight: bold;
 }
 
 .course__date__title {
-	width: 80%;
 	font-family: var(--arvo);
 	padding-bottom: .5rem;
 }
@@ -68,12 +67,6 @@
 	padding-bottom: 3rem;
 }
 
-@media (min-width: 500px) {
-	.course__date__title {
-		width: 30%;
-	}
-}
-
 /* Desktop view */
 @media (min-width: 768px) {
 	.course__wrapper {
@@ -82,14 +75,6 @@
 
 	.course__presentation {
 		width: 60%;
-	}
-
-	.course__date__title {
-		width: 30%;
-	}
-
-	.course__date__subtitle {
-		width: 100%;
 	}
 
 	.course__wrapper > aside {
@@ -113,7 +98,7 @@
 	}
 
 	.button--shape {
-		width: 50%;
+		width: 300px;
 		font-size: 120%;
 	}
 

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './views/Home/Home';
 import Course from './views/Course/Course';
+import Calendar from './views/Calendar/Calendar';
 
 const App = () => {
 	const [ courses, setCourses ] = useState([]);
@@ -21,6 +22,9 @@ const App = () => {
 				<Route exact path="/">
 					<Home items={courses} />
 				</Route>
+				<Route exact path="/calendario">
+					<Calendar list={courses} />
+				</Route>
 				{courses.map((course) => {
 					return (
 						<Route to={`/${course.name}`} key={course.link}>
@@ -28,6 +32,7 @@ const App = () => {
 						</Route>
 					);
 				})}
+				<Redirect from="*" to="/" />
 			</Switch>
 		</Router>
 	);

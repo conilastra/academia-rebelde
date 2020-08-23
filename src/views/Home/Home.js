@@ -1,9 +1,12 @@
 import React from 'react';
+
+import 'react-calendar/dist/Calendar.css';
 import './Home.css';
 
 import Spinner from '../../components/Spinner';
 import Menu from '../../components/Menu';
 import Header from '../../components/Header';
+import { Link } from 'react-router-dom';
 
 const Home = ({ items }) => {
 	return (
@@ -14,15 +17,12 @@ const Home = ({ items }) => {
 				<button className="button button--shape button--main">
 					<span>Inscríbete</span>
 				</button>
-				<a
-					className="link"
-					href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEFpkeZ2yw&#x2F;view?utm_content=DAEFpkeZ2yw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<span className="material-icons">event</span>
-					<span>Ver calendario</span>
-				</a>
+				<Link to="/calendario" className="link">
+					<p className="small">
+						<span className="material-icons">event</span>
+						<span>Ver calendario</span>
+					</p>
+				</Link>
 			</footer>
 		</main>
 	);

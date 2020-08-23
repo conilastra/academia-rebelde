@@ -1,0 +1,102 @@
+.view-wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.calendar-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.calendar__button {
+	width: 200px;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	bottom: 50px;
+	font-size: 90%;
+	padding-top: 2.5rem;
+}
+
+.calendar__button:hover {
+	font-size: 110%;
+}
+
+.calendar__list {
+	margin: 0 auto;
+	list-style: none;
+}
+
+.calendar__list__item {
+	font-size: 90%;
+	padding: .5rem;
+}
+
+.calendar__list__item:hover {
+	background-color: transparent;
+	padding: .5rem;
+	background-image: url("../../images/irregular-line-dark.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 20px;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+.calendar__list__item__date {
+	font-family: var(--arvo);
+	color: var(--yellow);
+	font-weight: 700;
+	margin-right: .5rem;
+}
+
+.calendar__list__item__time {
+	margin-left: .5rem;
+	opacity: 70%;
+}
+
+/* Calendar */
+.Calendar {
+	background: transparent;
+	cursor: auto;
+	margin: 0 auto;
+}
+
+.Calendar__header {
+	display: none;
+}
+
+.Calendar__day {
+	color: white;
+	font-family: var(--arvo);
+	cursor: auto;
+}
+
+.Calendar__day.-selected {
+	background-color: var(--yellow);
+	color: black;
+	font-weight: 700;
+}
+
+.Calendar__day:not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween):not(.-selected):hover {
+	background: transparent;
+	color: white;
+}
+
+.holidays {
+	color: grey;
+}
+
+@media (min-width: 798px) {
+	.calendar__list {
+		min-width: 500px;
+	}
+
+	.calendar-wrapper {
+		flex-wrap: nowrap;
+	}
+}
