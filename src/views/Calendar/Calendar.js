@@ -19,7 +19,7 @@ const Calendar = ({ list }) => {
 					<ModernCalendar customDaysClassName={customDaysClassName} value={preselectedDays} locale={locale} />
 					<p className="disclaimer">(11–20: receso programado por salud mental)</p>
 					<a
-						className="button button--shape calendar__button"
+						className="button calendar__button"
 						href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEFpkeZ2yw&#x2F;view?utm_content=DAEFpkeZ2yw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -34,9 +34,11 @@ const Calendar = ({ list }) => {
 						list.map((listItem) => (
 							<li className="calendar__list__item" key={listItem.link}>
 								<Link to={listItem.link}>
-									<p className="calendar__list__item__date">{listItem.fecha}</p>
+									<p className="calendar__list__item__date">
+										{listItem.fecha}
+										<span className="calendar__list__item__time">({listItem.horario})</span>
+									</p>
 									<span className="calendar__list__item__course">{listItem.taller}</span>
-									<span className="calendar__list__item__time">({listItem.horario})</span>
 								</Link>
 							</li>
 						))

@@ -11,14 +11,15 @@
 }
 
 .calendar__button {
-	width: 200px;
 	color: white;
+	width: 100%;
 	display: block;
-	margin: 0 auto;
+	text-align: center;
 	position: relative;
 	bottom: 50px;
 	font-size: 90%;
-	padding-top: 2.5rem;
+	font-family: var(--arvo);
+	text-decoration: underline wavy;
 }
 
 .calendar__button:hover {
@@ -32,7 +33,7 @@
 
 .calendar__list__item {
 	font-size: 90%;
-	padding: .5rem;
+	padding-bottom: 1.5rem;
 }
 
 .calendar__list__item:hover {
@@ -52,11 +53,13 @@
 	color: var(--yellow);
 	font-weight: 700;
 	margin-right: .5rem;
+	font-size: 90%;
 }
 
 .calendar__list__item__time {
+	font-family: var(--open-sans);
 	margin-left: .5rem;
-	opacity: 70%;
+	color: gray;
 }
 
 /* Calendar */
