@@ -53,7 +53,7 @@
 }
 
 .course__instructor {
-	background-image: url("../../images/irregular-line-dark.png");
+	background-image: url("../../images/irregular-line.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 400px;
@@ -80,4 +80,8 @@
 
 .course__instructor__descripcion {
 	font-size: 90%;
+}
+
+.course__buttons {
+	text-align: center;
 }

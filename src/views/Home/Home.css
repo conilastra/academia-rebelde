@@ -56,7 +56,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: var(--arvo);
-	height: 150px;
+	height: 100px;
 	width: 80%;
 	text-align: center;
 	transition: all 0.5s ease;
@@ -172,5 +172,13 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 1rem;
+	padding: 3rem 1rem;
+}
+
+.small > span {
+	font-size: 70%;
+}
+
+.material-icons {
+	margin-right: .25rem;
 }
