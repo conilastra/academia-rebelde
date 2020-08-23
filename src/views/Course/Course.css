@@ -68,9 +68,10 @@
 }
 
 /* Desktop view */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.course__wrapper {
 		display: flex;
+		justify-content: center;
 	}
 
 	.course__presentation {
@@ -78,7 +79,7 @@
 	}
 
 	.course__wrapper > aside {
-		width: 220px;
+		max-width: 300px;
 		height: 100vh;
 		background-image: url("../../images/irregular-line-variation.png");
 		background-position: center;
@@ -95,6 +96,15 @@
 
 	.course__buttons {
 		padding-top: 4rem;
+	}
+
+	.course-list__button--small {
+		width: 200px;
+	}
+
+	.course-list__button--small > .course-list__button__text {
+		font-size: 70%;
+		font-weight: 700;
 	}
 
 	.button--shape {

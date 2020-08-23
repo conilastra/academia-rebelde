@@ -55,7 +55,7 @@
 	background-image: url("../../images/irregular-line-dark.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	font-family: var(--arvo);
 	height: 100px;
 	width: 80%;
@@ -128,6 +128,7 @@
 	min-height: 50vh;
 	padding-top: 2rem;
 	text-align: center;
+	max-width: 750px;
 }
 
 .course-list__button {
@@ -137,7 +138,7 @@
 	background-image: url("../../images/irregular-circle.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	cursor: pointer;
 	height: 150px;
 	width: 150px;
@@ -151,7 +152,8 @@
 
 .course-list__button--small:hover,
 .navlink--active.course-list__button {
-	background-image: url("../../images/irregular-dark.png");
+	background-image: url("../../images/irregular-line.png");
+	font-size: 90%;
 }
 
 .course-list__button--small {
@@ -177,7 +179,8 @@
 	font-family: var(--arvo);
 	font-size: 80%;
 	font-weight: 700;
-	width: 60%;
+	width: 70%;
+	text-align: center;
 }
 
 .footer {
