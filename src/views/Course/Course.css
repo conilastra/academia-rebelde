@@ -29,7 +29,7 @@
 
 .course__date {
 	text-align: center;
-	padding: 2rem;
+	padding: 2rem 2rem 1rem 2rem;
 	font-size: 80%;
 	color: var(--yellow);
 }
@@ -72,7 +72,7 @@
 
 .course__buttons {
 	position: relative;
-	bottom: 60px;
+	bottom: 120px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;

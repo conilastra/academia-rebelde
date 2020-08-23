@@ -82,6 +82,7 @@
 	background: transparent;
 	cursor: auto;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
 .Calendar__header {
@@ -98,11 +99,16 @@
 	background-color: var(--yellow);
 	color: black;
 	font-weight: 700;
+	width: 25px;
 }
 
 .Calendar__day:not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween):not(.-selected):hover {
 	background: transparent;
 	color: white;
+}
+
+.Calendar__day.-ltr {
+	font-size: 1em;
 }
 
 .holidays {
@@ -117,5 +123,17 @@
 
 	.calendar-wrapper {
 		flex-wrap: nowrap;
+	}
+
+	.Calendar {
+		padding: 0;
+	}
+
+	.Calendar__day.-ltr {
+		font-size: 1.45em;
+	}
+
+	.Calendar__day.-selected {
+		width: 38px;
 	}
 }
