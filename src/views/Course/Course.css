@@ -41,11 +41,13 @@
 }
 
 .course__instructor {
-	background-image: url("../../images/irregular-line.png");
+	background-image: url("../../images/irregular-paint-composed.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 400px;
+	background-size: cover;
+	min-height: 450px;
 	padding: 1rem;
+	color: black;
 }
 
 .course__instructor__thumbnail {
@@ -53,6 +55,11 @@
 	height: 100px;
 	object-fit: cover;
 	width: 100px;
+}
+
+.course__instructor__text {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .course__instructor__name {
@@ -71,8 +78,6 @@
 }
 
 .course__buttons {
-	position: relative;
-	bottom: 120px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -115,12 +120,8 @@
 		bottom: 70px;
 	}
 
-	.course-list__button--small {
-		width: 200px;
-	}
-
 	.course-list__button--small > .course-list__button__text {
-		font-size: 70%;
+		font-size: 40%;
 		font-weight: 700;
 	}
 

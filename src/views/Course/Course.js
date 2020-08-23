@@ -116,7 +116,7 @@ const Course = ({ list, onClick }) => {
 								alt="Imagen de la encargada del taller"
 							/>
 
-							<div>
+							<div className="course__instructor__text">
 								<p className="course__instructor__name">{currentCourse.encargada}</p>
 								<p className="course__instructor__team">{currentCourse.equipo}</p>
 								<p className="course__instructor__descripcion">{currentCourse.descripcionTallerista}</p>

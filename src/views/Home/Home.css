@@ -9,6 +9,12 @@
 	padding: 1rem;
 }
 
+@media (max-width: 500px) {
+	.header--small {
+		font-size: 50%;
+	}
+}
+
 .header__title,
 .course__title,
 .title {
@@ -172,13 +178,13 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	font-size: 90%;
 }
 
 .course-list__button--small {
 	height: 100px;
 	width: 100px;
 	background-image: none;
+	padding-left: 1rem;
 }
 
 .course-list__button--small > .course-list__button__text {
@@ -189,7 +195,6 @@
 .course-list__button--small:hover > .course-list__button__text,
 .navlink--active > .course-list__button__text {
 	color: var(--yellow);
-	font-size: 8px;
 	text-align: center;
 }
 
