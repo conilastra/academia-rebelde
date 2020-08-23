@@ -18,12 +18,12 @@ const App = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/">
+				<Route exact path="/malla-academia/">
 					<Home items={courses} />
 				</Route>
 				{courses.map((course) => {
 					return (
-						<Route to={course.name} key={course.link}>
+						<Route to={`/malla-academia/${course.name}`} key={course.link}>
 							<Course list={courses} />
 						</Route>
 					);

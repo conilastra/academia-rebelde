@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Menu = ({ items, onClick, navMode = false }) => {
 	return items.map((item) => (
 		<NavLink
-			to={`/${item.link}`}
+			to={`/malla-academia/${item.link}`}
 			className={
 				navMode ? 'fade-in course-list__button course-list__button--small' : 'fade-in course-list__button'
 			}
