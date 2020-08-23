@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/academia-rebelde/static/css/main.874f3a5b.chunk.css",
-    "main.js": "/academia-rebelde/static/js/main.9af319e8.chunk.js",
-    "main.js.map": "/academia-rebelde/static/js/main.9af319e8.chunk.js.map",
-    "runtime-main.js": "/academia-rebelde/static/js/runtime-main.1b582c15.js",
-    "runtime-main.js.map": "/academia-rebelde/static/js/runtime-main.1b582c15.js.map",
-    "static/js/2.1d762f10.chunk.js": "/academia-rebelde/static/js/2.1d762f10.chunk.js",
-    "static/js/2.1d762f10.chunk.js.map": "/academia-rebelde/static/js/2.1d762f10.chunk.js.map",
-    "index.html": "/academia-rebelde/index.html",
-    "precache-manifest.2a348f22028270e7cab8d29095939220.js": "/academia-rebelde/precache-manifest.2a348f22028270e7cab8d29095939220.js",
-    "service-worker.js": "/academia-rebelde/service-worker.js",
-    "static/css/main.874f3a5b.chunk.css.map": "/academia-rebelde/static/css/main.874f3a5b.chunk.css.map",
-    "static/js/2.1d762f10.chunk.js.LICENSE.txt": "/academia-rebelde/static/js/2.1d762f10.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/academia-rebelde/static/media/irregular-line-yellow.7530c5cf.png",
-    "static/media/Course.css": "/academia-rebelde/static/media/irregular-paint-composed.b2b4a6ae.png"
+    "main.css": "/malla-academia-rebelde/static/css/main.e31f4e91.chunk.css",
+    "main.js": "/malla-academia-rebelde/static/js/main.1ccf5b97.chunk.js",
+    "main.js.map": "/malla-academia-rebelde/static/js/main.1ccf5b97.chunk.js.map",
+    "runtime-main.js": "/malla-academia-rebelde/static/js/runtime-main.9f70bf9f.js",
+    "runtime-main.js.map": "/malla-academia-rebelde/static/js/runtime-main.9f70bf9f.js.map",
+    "static/js/2.1d762f10.chunk.js": "/malla-academia-rebelde/static/js/2.1d762f10.chunk.js",
+    "static/js/2.1d762f10.chunk.js.map": "/malla-academia-rebelde/static/js/2.1d762f10.chunk.js.map",
+    "index.html": "/malla-academia-rebelde/index.html",
+    "precache-manifest.b6d93ce4797c36c5be5f59201cca2c7a.js": "/malla-academia-rebelde/precache-manifest.b6d93ce4797c36c5be5f59201cca2c7a.js",
+    "service-worker.js": "/malla-academia-rebelde/service-worker.js",
+    "static/css/main.e31f4e91.chunk.css.map": "/malla-academia-rebelde/static/css/main.e31f4e91.chunk.css.map",
+    "static/js/2.1d762f10.chunk.js.LICENSE.txt": "/malla-academia-rebelde/static/js/2.1d762f10.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/malla-academia-rebelde/static/media/irregular-line-yellow.7530c5cf.png",
+    "static/media/Course.css": "/malla-academia-rebelde/static/media/irregular-paint-composed.b2b4a6ae.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b582c15.js",
+    "static/js/runtime-main.9f70bf9f.js",
     "static/js/2.1d762f10.chunk.js",
-    "static/css/main.874f3a5b.chunk.css",
-    "static/js/main.9af319e8.chunk.js"
+    "static/css/main.e31f4e91.chunk.css",
+    "static/js/main.1ccf5b97.chunk.js"
   ]
 }
