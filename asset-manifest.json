@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/academia-rebelde/static/css/main.5443aeca.chunk.css",
+    "main.js": "/academia-rebelde/static/js/main.bf02de3e.chunk.js",
+    "main.js.map": "/academia-rebelde/static/js/main.bf02de3e.chunk.js.map",
+    "runtime-main.js": "/academia-rebelde/static/js/runtime-main.1b582c15.js",
+    "runtime-main.js.map": "/academia-rebelde/static/js/runtime-main.1b582c15.js.map",
+    "static/js/2.1d762f10.chunk.js": "/academia-rebelde/static/js/2.1d762f10.chunk.js",
+    "static/js/2.1d762f10.chunk.js.map": "/academia-rebelde/static/js/2.1d762f10.chunk.js.map",
+    "index.html": "/academia-rebelde/index.html",
+    "precache-manifest.af6d17764571d555eaf9fddb8d3cdf52.js": "/academia-rebelde/precache-manifest.af6d17764571d555eaf9fddb8d3cdf52.js",
+    "service-worker.js": "/academia-rebelde/service-worker.js",
+    "static/css/main.5443aeca.chunk.css.map": "/academia-rebelde/static/css/main.5443aeca.chunk.css.map",
+    "static/js/2.1d762f10.chunk.js.LICENSE.txt": "/academia-rebelde/static/js/2.1d762f10.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/academia-rebelde/static/media/irregular-line-yellow.7530c5cf.png",
+    "static/media/Course.css": "/academia-rebelde/static/media/irregular-paint-composed.b2b4a6ae.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b582c15.js",
+    "static/js/2.1d762f10.chunk.js",
+    "static/css/main.5443aeca.chunk.css",
+    "static/js/main.bf02de3e.chunk.js"
+  ]
+}
