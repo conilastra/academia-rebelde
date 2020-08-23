@@ -8,6 +8,7 @@ import Spinner from '../../components/Spinner';
 
 const Course = ({ list, onClick }) => {
 	const [ currentCourse, setCurrentCourse ] = useState(null);
+	const [ imageStatus, setImageStatus ] = useState('idle');
 	const location = useLocation();
 
 	useMemo(
@@ -17,10 +18,17 @@ const Course = ({ list, onClick }) => {
 				setCurrentCourse(currentCourse);
 			}
 		},
-		[ location ]
+		[ location, list ]
 	);
 
-	console.log(currentCourse);
+	useMemo(
+		() => {
+			if (location) {
+				setImageStatus('pending');
+			}
+		},
+		[ location ]
+	);
 
 	return (
 		<div className="wrapper">
@@ -36,7 +44,16 @@ const Course = ({ list, onClick }) => {
 						</div>
 					</main>
 					<aside className="course__instructor">
-						<img className="course__instructor__thumbnail fade-in" src={currentCourse[0].foto} />
+						{imageStatus === 'pending' && <Spinner />}
+
+						<img
+							onLoad={() => setImageStatus('done')}
+							className="course__instructor__thumbnail fade-in"
+							src={currentCourse[0].foto}
+							style={{ display: imageStatus === 'pending' ? 'none' : 'initial' }}
+							alt="Imagen de la encargada del taller"
+						/>
+
 						<div>
 							<p className="course__instructor__name">{currentCourse[0].encargada}</p>
 							<p className="course__instructor__team">{currentCourse[0].equipo}</p>
