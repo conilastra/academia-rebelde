@@ -91,6 +91,18 @@
 	color: white;
 }
 
+.course__aditional-info {
+	padding: 1rem 0;
+	font-size: 90%;
+}
+
+.course__aditional-info--primary {
+	font-weight: 700;
+	font-family: var(--arvo);
+	color: grey;
+	margin-right: .5rem;
+}
+
 /* Desktop view */
 @media (min-width: 769px) {
 	.course__wrapper {

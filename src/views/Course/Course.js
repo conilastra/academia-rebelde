@@ -61,6 +61,12 @@ const Course = ({ list, onClick }) => {
 						<main className="course__presentation">
 							<h1 className="course__title">{currentCourse.taller.toUpperCase()}</h1>
 							<p className="course__description">{currentCourse.objetivoTaller}</p>
+							{currentCourse.materiales && (
+								<p className="course__aditional-info">
+									<span className="course__aditional-info--primary">Requisitos:</span>
+									<span>{currentCourse.materiales}</span>
+								</p>
+							)}
 							<div className="course__date">
 								<span className="course__date__title">{currentCourse.fecha}</span>
 								<span style={{ color: 'grey' }}> | </span>
@@ -96,9 +102,13 @@ const Course = ({ list, onClick }) => {
 							</div>
 
 							<section className="course__buttons">
-								<Link to="/formulario" className="button button--shape">
-									<span>Inscríbete</span>
-								</Link>
+								<a
+									href="https://docs.google.com/forms/d/e/1FAIpQLSfbNoniuf9uoIHQlt-EfoVS2R7_gsRznL0CaQeoVD3kapXNYg/viewform?usp=sf_link"
+									target="_blank"
+									className="button button--shape"
+								>
+									Inscríbete
+								</a>
 								<Link to="/calendario" className="button calendar__button--home calendar__button">
 									<span>Ver calendario</span>
 								</Link>

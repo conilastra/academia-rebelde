@@ -14,9 +14,13 @@ const Home = ({ items }) => {
 			<Header />
 			<section className="course-list">{items.length > 0 ? <Menu items={items} /> : <Spinner />}</section>
 			<footer className="footer">
-				<Link to="/formulario" className="button button--shape button--main">
-					<span>Inscríbete</span>
-				</Link>
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfbNoniuf9uoIHQlt-EfoVS2R7_gsRznL0CaQeoVD3kapXNYg/viewform?usp=sf_link"
+					target="_blank"
+					className="button button--shape button--main"
+				>
+					Inscríbete
+				</a>
 				<Link to="/calendario" className="button calendar__button--home calendar__button">
 					<span>Ver calendario</span>
 				</Link>
