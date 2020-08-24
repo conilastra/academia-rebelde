@@ -10,7 +10,7 @@
 }
 .dot-container {
 	position: absolute;
-	border: 0px solid #fff;
+	border: 0px solid var(--yellow);
 	border-radius: 50px;
 }
 
@@ -36,7 +36,7 @@
 	position: absolute;
 	height: 10px;
 	width: 10px;
-	background: #fff;
+	background: var(--yellow);
 	border-radius: 5px;
 	transform: translate(0, 0);
 }
