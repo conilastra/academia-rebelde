@@ -11,9 +11,9 @@ const App = () => {
 
 	useEffect(() => {
 		axios
-			.get('https://v2-api.sheety.co/ae60fd15782508292e58f110b167e0bd/academiaRebeldeSeptiembre/septiembre')
+			.get('https://api.sheety.co/ae60fd15782508292e58f110b167e0bd/academiaRebeldeSeptiembre/noviembre')
 			.then((resp) => {
-				setCourses(resp.data.septiembre);
+				setCourses(resp.data.noviembre);
 			});
 	}, []);
 

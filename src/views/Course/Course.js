@@ -74,29 +74,11 @@ const Course = ({ list, onClick }) => {
 							</div>
 							<div className="course__calendar">
 								<Calendar
-									customDaysClassName={customDaysClassName}
-									value={
-										currentCourse.sesion2 ? (
-											[
-												{
-													year: 2020,
-													month: 9,
-													day: currentCourse.sesion1
-												},
-												{
-													year: 2020,
-													month: 9,
-													day: currentCourse.sesion2
-												}
-											]
-										) : (
-											{
-												year: 2020,
-												month: 9,
-												day: currentCourse.sesion1
-											}
-										)
-									}
+									value={{
+										year: 2020,
+										month: 11,
+										day: currentCourse.sesion1
+									}}
 									locale={locale}
 								/>
 							</div>

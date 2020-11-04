@@ -91,125 +91,38 @@ const locale = {
 	// is your language rtl or ltr?
 	isRtl: false
 };
-const preselectedDays = [
-	{
-		year: 2020,
-		month: 9,
-		day: 1
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 2
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 3
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 6
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 8
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 22
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 23
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 24
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 26
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 29
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 30
-	}
-];
 
 const customDaysClassName = [
 	{
 		year: 2020,
-		month: 9,
+		month: 11,
 		day: 11,
 		className: 'holidays'
 	},
 	{
 		year: 2020,
-		month: 9,
-		day: 12,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
+		month: 11,
 		day: 13,
 		className: 'holidays'
 	},
 	{
 		year: 2020,
-		month: 9,
-		day: 14,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 15,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 16,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 17,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
-		day: 18,
-		className: 'holidays'
-	},
-	{
-		year: 2020,
-		month: 9,
+		month: 11,
 		day: 19,
 		className: 'holidays'
 	},
 	{
 		year: 2020,
-		month: 9,
-		day: 20,
+		month: 11,
+		day: 27,
+		className: 'holidays'
+	},
+	{
+		year: 2020,
+		month: 11,
+		day: 29,
 		className: 'holidays'
 	}
 ];
 
-export { locale, preselectedDays, customDaysClassName };
+export { locale, customDaysClassName };
