@@ -86,6 +86,12 @@
 	min-height: 250px;
 }
 
+.Calendar__sectionWrapper {
+	position: relative;
+	min-height: 190px;
+	overflow: hidden;
+}
+
 .Calendar__header {
 	display: none;
 }
@@ -103,7 +109,8 @@
 	width: 25px;
 }
 
-.Calendar__day:not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween):not(.-selected):hover {
+.Calendar__day:not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween):not(.-selected):hover,
+.Calendar__day.-today:not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween) {
 	background: transparent;
 	color: white;
 }
@@ -136,5 +143,9 @@
 
 	.Calendar__day.-selected {
 		width: 38px;
+	}
+
+	.Calendar__sectionWrapper {
+		min-height: 290px;
 	}
 }
