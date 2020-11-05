@@ -9,12 +9,6 @@
 	padding: 1rem;
 }
 
-@media (max-width: 500px) {
-	.header--small {
-		font-size: 50%;
-	}
-}
-
 .header__title,
 .course__title,
 .title {
@@ -187,7 +181,7 @@
 }
 
 .course-list__button--small > .course-list__button__text {
-	font-size: 10px;
+	font-size: 70%;
 	color: white;
 }
 
@@ -242,6 +236,18 @@
 	cursor: pointer;
 	height: 80px;
 	width: 80px;
-	margin-left: 1.5rem;
-	margin-top: 1rem;
+	margin: 1rem auto;
+}
+
+@media (max-width: 500px) {
+	.header--small {
+		font-size: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.course-list__button--small {
+		width: auto;
+		padding-left: 0;
+	}
 }

@@ -59,7 +59,12 @@ const Course = ({ list, onClick }) => {
 					<Navbar items={list} onClick={onClick} />
 					<div className="course__wrapper fade-in">
 						<main className="course__presentation">
-							<h1 className="course__title">{currentCourse.taller.toUpperCase()}</h1>
+							<h1 className="course__title">
+								<p>{currentCourse.taller.toUpperCase()}</p>
+								<span className="course__subtitle">
+									{currentCourse.subtitulo && currentCourse.subtitulo}
+								</span>
+							</h1>
 							<p className="course__description">{currentCourse.objetivoTaller}</p>
 							{currentCourse.materiales && (
 								<p className="course__aditional-info">
