@@ -116,11 +116,12 @@
 @media (min-width: 769px) {
 	.course__wrapper {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	.course__presentation {
 		width: 60%;
+		margin: 0 auto;
 	}
 
 	.course__wrapper > aside {
