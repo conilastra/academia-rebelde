@@ -15,7 +15,7 @@ const Home = ({ items }) => {
 			<section className="course-list">{items.length > 0 ? <Menu items={items} /> : <Spinner />}</section>
 			<footer className="footer">
 				<a
-					href="https://docs.google.com/forms/d/e/1FAIpQLSfbNoniuf9uoIHQlt-EfoVS2R7_gsRznL0CaQeoVD3kapXNYg/viewform?usp=sf_link"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfS7G78FFL0tJY8YRQAAx0ySNtIPh1WNGxGgIoAS98hcMZ8yA/viewform?usp=sf_link"
 					target="_blank"
 					className="button button--shape button--main"
 				>

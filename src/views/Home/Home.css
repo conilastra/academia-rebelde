@@ -9,12 +9,6 @@
 	padding: 1rem;
 }
 
-@media (max-width: 500px) {
-	.header--small {
-		font-size: 50%;
-	}
-}
-
 .header__title,
 .course__title,
 .title {
@@ -74,7 +68,7 @@
 	text-align: center;
 	transition: all 0.5s ease;
 	font-weight: 700;
-	height: 120px;
+	height: 65px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -137,7 +131,7 @@
 
 .navbar {
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -149,7 +143,7 @@
 	min-height: 50vh;
 	padding-top: 2rem;
 	text-align: center;
-	max-width: 750px;
+	max-width: 450px;
 }
 
 .course-list__button {
@@ -187,7 +181,7 @@
 }
 
 .course-list__button--small > .course-list__button__text {
-	font-size: 10px;
+	font-size: 70%;
 	color: white;
 }
 
@@ -240,9 +234,20 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
-	height: 100px;
-	width: 70px;
-	margin-left: 1.5rem;
-	margin-bottom: 1rem;
-	margin-top: 1rem;
+	height: 80px;
+	width: 80px;
+	margin: 1rem auto;
+}
+
+@media (max-width: 500px) {
+	.header--small {
+		font-size: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.course-list__button--small {
+		width: 100%;
+		padding-left: 0;
+	}
 }

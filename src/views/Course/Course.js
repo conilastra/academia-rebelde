@@ -59,7 +59,12 @@ const Course = ({ list, onClick }) => {
 					<Navbar items={list} onClick={onClick} />
 					<div className="course__wrapper fade-in">
 						<main className="course__presentation">
-							<h1 className="course__title">{currentCourse.taller.toUpperCase()}</h1>
+							<h1 className="course__title">
+								<p>{currentCourse.taller.toUpperCase()}</p>
+								<span className="course__subtitle">
+									{currentCourse.subtitulo && currentCourse.subtitulo}
+								</span>
+							</h1>
 							<p className="course__description">{currentCourse.objetivoTaller}</p>
 							{currentCourse.materiales && (
 								<p className="course__aditional-info">
@@ -74,36 +79,18 @@ const Course = ({ list, onClick }) => {
 							</div>
 							<div className="course__calendar">
 								<Calendar
-									customDaysClassName={customDaysClassName}
-									value={
-										currentCourse.sesion2 ? (
-											[
-												{
-													year: 2020,
-													month: 9,
-													day: currentCourse.sesion1
-												},
-												{
-													year: 2020,
-													month: 9,
-													day: currentCourse.sesion2
-												}
-											]
-										) : (
-											{
-												year: 2020,
-												month: 9,
-												day: currentCourse.sesion1
-											}
-										)
-									}
+									value={{
+										year: 2020,
+										month: 11,
+										day: currentCourse.sesion1
+									}}
 									locale={locale}
 								/>
 							</div>
 
 							<section className="course__buttons">
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSfbNoniuf9uoIHQlt-EfoVS2R7_gsRznL0CaQeoVD3kapXNYg/viewform?usp=sf_link"
+									href="https://docs.google.com/forms/d/e/1FAIpQLSfS7G78FFL0tJY8YRQAAx0ySNtIPh1WNGxGgIoAS98hcMZ8yA/viewform?usp=sf_link"
 									target="_blank"
 									className="button button--shape"
 								>
