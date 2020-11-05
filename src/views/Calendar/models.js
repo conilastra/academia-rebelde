@@ -92,37 +92,32 @@ const locale = {
 	isRtl: false
 };
 
-const customDaysClassName = [
+const preselectedDays = [
 	{
 		year: 2020,
 		month: 11,
-		day: 11,
-		className: 'holidays'
+		day: 11
 	},
 	{
 		year: 2020,
 		month: 11,
-		day: 13,
-		className: 'holidays'
+		day: 13
 	},
 	{
 		year: 2020,
 		month: 11,
-		day: 19,
-		className: 'holidays'
+		day: 19
 	},
 	{
 		year: 2020,
 		month: 11,
-		day: 27,
-		className: 'holidays'
+		day: 27
 	},
 	{
 		year: 2020,
 		month: 11,
-		day: 29,
-		className: 'holidays'
+		day: 29
 	}
 ];
 
-export { locale, customDaysClassName };
+export { locale, preselectedDays };
