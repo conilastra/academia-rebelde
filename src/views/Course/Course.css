@@ -1,6 +1,11 @@
 .course__title {
 	font-size: 140%;
 	margin-bottom: 1rem;
+	line-height: 1;
+}
+
+.course__title > p {
+	line-height: 1.5;
 }
 
 .course__subtitle {
