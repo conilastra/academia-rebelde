@@ -125,11 +125,12 @@
 	}
 
 	.course__wrapper > aside {
-		max-width: 300px;
-		background-image: url("../../images/irregular-shape.png");
+		background-image: url("../../images/irregular-shape-variation.png");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		max-width: 300px;
+		min-height: 100vh;
 		text-align: center;
 		padding-top: 2rem;
 	}
@@ -137,7 +138,7 @@
 		color: white;
 	}
 	.course__instructor__descripcion {
-		width: 75%;
+		width: 85%;
 		margin: 0 auto;
 	}
 	.course__calendar {
@@ -148,6 +149,7 @@
 	}
 
 	.course-list__button--small > .course-list__button__text {
+		font-size: 80%;
 		font-weight: 700;
 	}
 
